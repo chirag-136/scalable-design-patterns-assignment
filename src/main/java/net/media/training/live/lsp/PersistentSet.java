@@ -13,11 +13,11 @@ public class PersistentSet<T> extends Set<T> {
         super.add((T) persistentObject);
     }
 
-    public boolean isMember(T element) {
-        for (Object o : innerSet) {
-            if (o.equals(element))
-                return true;
-        }
-        return false;
-    }
+//    public boolean isMember(T element) {
+//        for (Object o : innerSet) {
+//            if (o.equals(element))
+//                return true;
+//        }
+//        return false;
+//    }
 }

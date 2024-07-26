@@ -11,8 +11,12 @@ import java.io.IOException;
  */
 public class EncodingModuleClient {
     public static void main(String[] args) throws IOException {
-        EncodingModule encodingModule  = new EncodingModule();
-        encodingModule.encodeWithFiles();
-        encodingModule.encodeBasedOnNetworkAndDatabase();
+//        EncodingModule encodingModule  = new EncodingModule();
+        FilesEncoder filesEncoder = new FilesEncoder();
+        NetworkAndDatabaseEncoder networkAndDatabaseEncoder = new NetworkAndDatabaseEncoder();
+        filesEncoder.encode();
+        networkAndDatabaseEncoder.encode();
+//        encodingModule.encodeWithFiles();
+//        encodingModule.encodeBasedOnNetworkAndDatabase();
     }
 }

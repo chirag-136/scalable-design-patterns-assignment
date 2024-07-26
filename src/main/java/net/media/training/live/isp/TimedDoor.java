@@ -39,7 +39,4 @@ public class TimedDoor implements Door,TimerClient  {
         this.isLocked = true;
     }
 
-    public void proximityCallback() {
-        throw new NotImplementedException();
-    }
 }

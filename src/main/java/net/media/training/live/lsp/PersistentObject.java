@@ -11,8 +11,8 @@ public class PersistentObject<T> {
     private String data;
 
     public PersistentObject(T data) {
-        if (!(data instanceof String))
-            throw new IllegalArgumentException("Element type should be string, but you passed : " + data.toString());
+//        if (!(data instanceof String))
+//            throw new IllegalArgumentException("Element type should be string, but you passed : " + data.toString());
         this.data = (String) data;
     }
 
